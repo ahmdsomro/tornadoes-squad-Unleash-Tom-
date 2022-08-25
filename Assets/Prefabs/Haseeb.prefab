@@ -2466,7 +2466,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91c7fe29857e52e4ea3c2fa7003d96fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 4
   turnspeed: 2
 --- !u!114 &3479996610014401301
 MonoBehaviour:
@@ -5877,7 +5877,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 00310d51d2756554ebf0a2af97ea81ff, type: 2}
+  - {fileID: 2100000, guid: 90f4237845646b641a4fa16e28052525, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

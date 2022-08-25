@@ -4,11 +4,7 @@ using UnityEngine;
 
 public class PlayerCollision : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameManager gameManager;
 
     // Update is called once per frame
     void Update()
@@ -17,11 +13,15 @@ public class PlayerCollision : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
-        switch(other.gameObject.tag)
+
+        if(other.gameObject.tag== "obstacle")
         {
-            case "obstacle" :
+            gameManager.GameOver(); //calling game over panel when player collides with obstacles
             Destroy(gameObject);
-            break;
+        }
+        switch (other.gameObject.tag)
+        {
+          
 
             case "cubeshape" :
             transform.localScale = new Vector3(1, 1, 1);
@@ -34,6 +34,16 @@ public class PlayerCollision : MonoBehaviour
             case "verrectangleshape" :
             transform.localScale = new Vector3(0.5f, 2, 1);
             break;
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.name=="Success")
+        {
+            gameManager.GameSuccess();
+            Destroy(gameObject);
+
         }
     }
 }
