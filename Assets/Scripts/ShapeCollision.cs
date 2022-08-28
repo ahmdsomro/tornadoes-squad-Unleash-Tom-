@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ShapeCollision : MonoBehaviour
 {
+    [SerializeField] float rotatespeed;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,7 +14,7 @@ public class ShapeCollision : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        transform.Rotate(Vector3.up * Time.deltaTime * rotatespeed);
     }
     void OnTriggerEnter (Collider other)
     {
