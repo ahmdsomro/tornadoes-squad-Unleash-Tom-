@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 16a3a9f1705101649ae6c5b2d31537bc
   - enabled: 1
-    path: Assets/Scenes/UnleashTom.unity
+    path: Assets/Scenes/WholeInTheWall.unity
     guid: 6c64db8238188c443b596159d5819cf1
   m_configObjects: {}

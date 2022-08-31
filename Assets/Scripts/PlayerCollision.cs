@@ -19,6 +19,8 @@ public class PlayerCollision : MonoBehaviour
             gameManager.GameOver(); //calling game over panel when player collides with obstacles
             Destroy(gameObject);
         }
+
+       
         switch (other.gameObject.tag)
         {
           
@@ -34,6 +36,14 @@ public class PlayerCollision : MonoBehaviour
             case "verrectangleshape" :
             transform.localScale = new Vector3(0.5f, 2, 1);
             break;
+
+            case "capsule":
+            transform.localScale = new Vector3(0.735362f, 0.716704f, 0.706597f);
+            break;
+
+            case "sphere":
+            transform.localScale = new Vector3(0.5f, 2, 1);
+            break;
         }
     }
 
@@ -45,5 +55,6 @@ public class PlayerCollision : MonoBehaviour
             Destroy(gameObject);
 
         }
+        
     }
 }

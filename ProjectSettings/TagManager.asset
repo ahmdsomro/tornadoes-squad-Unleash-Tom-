@@ -19,6 +19,9 @@ TagManager:
   - x15
   - x20
   - x30
+  - capsule
+  - sphere
+  - bomb
   layers:
   - Default
   - TransparentFX

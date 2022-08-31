@@ -12,8 +12,15 @@ public class GameManager : MonoBehaviour
 
     int score;
     Text scoreText;
+    public Text highScore;
+    
 
 
+    void Start()
+    {
+        highScore.text = PlayerPrefs.GetInt("HighScore").ToString();
+
+    }
      void Awake()
     {
         if (instance == null)
@@ -24,7 +31,17 @@ public class GameManager : MonoBehaviour
         scoreText = scoreTextObject.GetComponent<Text>();
 
         scoreText.text = "Score: " + score.ToString();
+
+      
         
+    }
+    private void Update()
+    {
+        if (score > PlayerPrefs.GetInt("HighScore"))
+        {
+            PlayerPrefs.SetInt("HighScore", score);
+        }
+
     }
 
     public void Collect(int passedValue,GameObject passedObject)
