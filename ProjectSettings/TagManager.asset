@@ -22,6 +22,7 @@ TagManager:
   - capsule
   - sphere
   - bomb
+  - x17
   layers:
   - Default
   - TransparentFX

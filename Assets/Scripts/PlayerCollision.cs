@@ -53,7 +53,6 @@ public class PlayerCollision : MonoBehaviour
         {
             gameManager.GameSuccess();
             Destroy(gameObject);
-
         }
         
     }
