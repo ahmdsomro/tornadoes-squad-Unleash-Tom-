@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerCollision : MonoBehaviour
 {
     public GameManager gameManager;
+    public AudioSource overSound, Background, successSound;
 
     // Update is called once per frame
     void Update()
@@ -16,7 +17,10 @@ public class PlayerCollision : MonoBehaviour
 
         if(other.gameObject.tag== "obstacle")
         {
-            gameManager.GameOver(); //calling game over panel when player collides with obstacles
+            gameManager.GameOver(); 
+            Background.Pause();
+            overSound.Play();
+            //calling game over panel when player collides with obstacles
             Destroy(gameObject);
         }
 
@@ -52,8 +56,13 @@ public class PlayerCollision : MonoBehaviour
         if (collision.gameObject.name=="Success")
         {
             gameManager.GameSuccess();
+            Background.Pause();
+            overSound.Pause();
+            successSound.Play();
             Destroy(gameObject);
         }
         
     }
+
+    
 }

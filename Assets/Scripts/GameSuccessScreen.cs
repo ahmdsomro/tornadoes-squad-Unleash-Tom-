@@ -8,6 +8,8 @@ public class GameSuccessScreen : MonoBehaviour
 {
 
     public Text pointsText;
+    public AudioClip click;
+    public AudioSource music;
     public void Setup(int score)
     {
         gameObject.SetActive(true);
@@ -23,5 +25,8 @@ public class GameSuccessScreen : MonoBehaviour
     {
         SceneManager.LoadScene(0);
 
+    }
+    public void ClickSound(){
+        music.PlayOneShot(click);
     }
 }

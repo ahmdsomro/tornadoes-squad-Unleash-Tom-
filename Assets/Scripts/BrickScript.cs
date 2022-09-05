@@ -6,6 +6,7 @@ public class BrickScript : MonoBehaviour
 {
     Rigidbody rb;
     [SerializeField] float explosionforce;
+    public AudioSource explosion;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +23,7 @@ public class BrickScript : MonoBehaviour
         switch(other.gameObject.tag)
         {
             case "Player" :
+            explosion.Play();
             rb.AddRelativeForce(Vector3.forward * explosionforce);
             break;
         }

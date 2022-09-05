@@ -5,8 +5,8 @@ using UnityEngine;
 public class ShapeCollision : MonoBehaviour
 {
     [SerializeField] float rotatespeed;
+    public AudioSource shapeSound;    
     
-
    
 
     // Start is called before the first frame update
@@ -20,7 +20,7 @@ public class ShapeCollision : MonoBehaviour
     {
         //below we are rotating the shapes about their positions
         transform.Rotate(Vector3.up * Time.deltaTime * rotatespeed);
-
+       
     }
 
     //below if the collison is with player so we will destroy the shape it collided with
@@ -31,6 +31,7 @@ public class ShapeCollision : MonoBehaviour
         switch(other.gameObject.tag)
         {
             case "Player" :
+            shapeSound.Play();
             Destroy(gameObject);
             break;
         }

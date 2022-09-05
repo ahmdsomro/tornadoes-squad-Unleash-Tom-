@@ -5,7 +5,7 @@ using UnityEngine;
 public class Collectable : MonoBehaviour
 {
     public int value;  //value of collectables that player has colllected
-    
+    public AudioSource ballSound;
 
     // Update is called once per frame
     void Update()
@@ -16,7 +16,7 @@ public class Collectable : MonoBehaviour
     private void OnTriggerEnter()
     {
         GameManager.instance.Collect(value,gameObject);
-        
+        ballSound.Play();
     }
 
 }

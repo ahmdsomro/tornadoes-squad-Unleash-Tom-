@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 
 public class GameOverScreen : MonoBehaviour
 {
+    public AudioClip click;
+    public AudioSource music;
     public Text pointsText;
     public void Setup(int score)
     {
@@ -24,6 +26,9 @@ public class GameOverScreen : MonoBehaviour
     {
          SceneManager.LoadScene(0);
 
+    }
+    public void ClickSound(){
+        music.PlayOneShot(click);
     }
     
 }
