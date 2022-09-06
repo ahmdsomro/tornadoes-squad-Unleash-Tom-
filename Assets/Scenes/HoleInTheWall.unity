@@ -2467,7 +2467,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7636817, y: 1}
+    m_SensorSize: {x: 2.1987343, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -11286,6 +11286,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 6575796813078718832, guid: 0ec63f48429bb4c40991d3ba881037df, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d9502c1ca4116144f96c06f8f722fa9f, type: 2}
     - target: {fileID: 6575796813095367077, guid: 0ec63f48429bb4c40991d3ba881037df, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12.517
@@ -11418,6 +11422,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: x17
       objectReference: {fileID: 0}
+    - target: {fileID: 6575796813409682834, guid: 0ec63f48429bb4c40991d3ba881037df, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6a84ffd4a6801724a97321abff451544, type: 2}
     - target: {fileID: 6575796813462231566, guid: 0ec63f48429bb4c40991d3ba881037df, type: 3}
       propertyPath: shapeSound
       value: 
@@ -11442,6 +11450,10 @@ PrefabInstance:
       propertyPath: shapeSound
       value: 
       objectReference: {fileID: 1753301651}
+    - target: {fileID: 6575796813573643422, guid: 0ec63f48429bb4c40991d3ba881037df, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6a84ffd4a6801724a97321abff451544, type: 2}
     - target: {fileID: 6575796813605986729, guid: 0ec63f48429bb4c40991d3ba881037df, type: 3}
       propertyPath: shapeSound
       value: 
@@ -11530,6 +11542,10 @@ PrefabInstance:
       propertyPath: shapeSound
       value: 
       objectReference: {fileID: 813513144}
+    - target: {fileID: 6575796814210324766, guid: 0ec63f48429bb4c40991d3ba881037df, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1ec4c1c1c4f595948bd36ee8b6f14e7f, type: 2}
     - target: {fileID: 6575796814213170125, guid: 0ec63f48429bb4c40991d3ba881037df, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.1569996
@@ -11542,6 +11558,14 @@ PrefabInstance:
       propertyPath: shapeSound
       value: 
       objectReference: {fileID: 1753301651}
+    - target: {fileID: 6575796814277794842, guid: 0ec63f48429bb4c40991d3ba881037df, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d9502c1ca4116144f96c06f8f722fa9f, type: 2}
+    - target: {fileID: 6575796814315961195, guid: 0ec63f48429bb4c40991d3ba881037df, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6a84ffd4a6801724a97321abff451544, type: 2}
     - target: {fileID: 6575796814326028207, guid: 0ec63f48429bb4c40991d3ba881037df, type: 3}
       propertyPath: shapeSound
       value: 
@@ -11710,6 +11734,10 @@ PrefabInstance:
       propertyPath: shapeSound
       value: 
       objectReference: {fileID: 1753301651}
+    - target: {fileID: 6575796814636785244, guid: 0ec63f48429bb4c40991d3ba881037df, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1ec4c1c1c4f595948bd36ee8b6f14e7f, type: 2}
     - target: {fileID: 6575796814645450099, guid: 0ec63f48429bb4c40991d3ba881037df, type: 3}
       propertyPath: shapeSound
       value: 
@@ -11742,6 +11770,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -0.43
       objectReference: {fileID: 0}
+    - target: {fileID: 6575796814912295635, guid: 0ec63f48429bb4c40991d3ba881037df, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6a84ffd4a6801724a97321abff451544, type: 2}
     - target: {fileID: 6575796814939968522, guid: 0ec63f48429bb4c40991d3ba881037df, type: 3}
       propertyPath: shapeSound
       value: 
